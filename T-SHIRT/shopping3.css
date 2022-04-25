@@ -1,0 +1,132 @@
+/* CSS Document */
+:root{
+	--width-article:80%
+}
+#toanbowed{
+	display: flex;
+	flex-direction: column;
+	margin:0px auto;
+	border:solid 1px;
+}
+header{
+	/* clear: both;	 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #036;
+}
+header div img{
+	object-fit:cover;
+	width: 100%;
+	height: 100%;
+}
+nav
+{
+	background:url('images/menu_bg.png');
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+nav a 
+{
+	color: #B4FF9F;
+	font-weight:bold;
+	text-decoration:none;
+	display:inline;
+	line-height: 1.6;
+	text-align: center;
+}
+nav a:hover
+{
+	background:#900;
+	color:#FF0;	
+}
+main{
+	display: flex;
+	flex-direction: row;
+}
+aside
+{
+	/* --width-article:20%; */
+	width:calc(100% - var(--width-article) - 20px);
+	/* ho tro trinh duyet chorme */
+	width: -moz-calc(100% - var(--width-article) - 20px);
+	width: -webkit-calc(100% - var(--width-article) - 20px);
+	/*  */
+	background: url('images/header.png') no-repeat top center ;
+}	
+aside h4
+{
+	text-align:center;
+	color:#03F;
+}
+aside a
+{
+	text-decoration:none;
+	line-height: 1.6;
+	font-weight:bold;
+	color:#00F;
+}
+aside ul
+{
+	list-style-image:url('./Images/line.bmp');	
+}
+article {
+	width: var(--width-article);
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+}
+article h4
+{
+	color:#F60;
+	margin-top:20px;
+	background:#CF0;	
+	text-align: center;
+	padding: 20px;
+}
+#vung3sp{
+	/* display: flex;
+	justify-content: space-between;
+	align-items: flex-start; */
+	display: grid;
+	grid-template-columns: repeat(3 , 1fr);
+	grid-gap: 50px;
+	background-color: #FFA1A1;
+}
+#vung3sp .block{	
+	text-align:center;
+	flex-direction: column;
+}
+
+/* #vung3sp div p
+{
+	color:#f00;
+	font-weight:bold;	
+} */
+
+footer
+{
+	background:#DEA057;
+	display:flex;
+	flex-direction:column;
+}
+footer #menufooter{
+	display:grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-auto-columns: 50px 20px;
+	text-align: center;
+}
+#menufooter a
+{
+	text-decoration:none;
+	color:#036;
+	line-height:35px;
+	display:block;
+}
+footer p
+{
+	text-align:center;
+}
+
